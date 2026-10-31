@@ -1,10 +1,14 @@
 # Redline Engine Lab
 
-A work-in-progress browser engine simulator. Open `index.html` in a browser and use Start Engine, then hold the accelerator or Space. The dashboard and speed are illustrative.
+A browser engine simulator. Start the engine, then hold the accelerator or Space. Select an engine and shift gears using the controls.
 
-## Current limitations
+Audio uses a procedural cylinder and exhaust model. Redlines are exaggerated for the simulator, the dashboard is conceptual, and the sounds are not calibrated recordings of the named cars.
 
-The V8, Lexus LFA V10, and Ferrari 599 V12 use segments of field recordings adjusted for playback speed; these are not calibrated sound banks. The inline-six currently uses a V8 placeholder. The instrument clusters are concepts, not replicas. Audio transitions need listening tests and further tuning.
+## Audio generator
+
+The audio worklet in `index.html` is adapted from [engine-sound-generator](https://github.com/Antonio-R1/engine-sound-generator) by Antonio-R1, Copyright (c) 2021-2022, licensed under the MIT License. The full license is included in `index.html` next to the source.
+
+The `audio` folder contains recordings retained from earlier previews; the current simulator does not use them. Their original licenses and credits remain in `audio/CREDITS.md` and the repository history.
 
 ## Audio credits
 
@@ -12,3 +16,4 @@ The V8, Lexus LFA V10, and Ferrari 599 V12 use segments of field recordings adju
 - `audio/v8-real.mp3`: overmedium, [v8 engine rev](https://freesound.org/people/overmedium/sounds/651534/), CC0. Playback speed and loop points adjusted.
 - `audio/lfa.ogg`: Altair78, [Lexus LFA revving](https://commons.wikimedia.org/wiki/File:Lexus_LFA_revving_1LR-GUE_(2009).ogg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Playback speed and loop points adjusted.
 - `audio/ferrari.flac`: CarSpotter, [Ferrari 599 GTB](https://commons.wikimedia.org/wiki/File:Ferrari_599_GTB_Fiorano_-_engine_and_exhaust_sound_(Flickr_3087503901).flac), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Playback speed and loop points adjusted.
+
